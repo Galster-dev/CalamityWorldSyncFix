@@ -1,0 +1,6 @@
+displayName = Calamity WorldSync fix
+author = Galster
+version = 1.0
+modReferences = CalamityMod
+includeSource = true
+side = Server
