@@ -1,0 +1,18 @@
+name: build
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  automaticpublish:
+    name: Automatic Mod Browser Publish Integration
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v2
+   
+      - uses: JavidPack/tModLoaderPublishIntegration@v0.11.8.8
+        with:
+          STEAMID64: ${{secrets.STEAMID64}}
+          MODBROWSERPASSPHRASE: ${{secrets.MODBROWSERPASSPHRASE}}
+          MODNAME: CalamityWorldSyncFix
