@@ -3,4 +3,4 @@ author = Galster
 version = 1.0.0
 modReferences = CalamityMod
 includeSource = true
-side = Server
+side = Both
